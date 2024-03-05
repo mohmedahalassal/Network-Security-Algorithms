@@ -6,16 +6,16 @@ string Encryption(string s, int k) {
     int sz = s.length(), p=0;
     string ans = "";
     for (int i = 0; i < sz; ++i) {
-        if (s[i] == ' ') {
-            ans += s[i];
-        }
-        else if (s[i] >= 65 && s[i] <= 90) {
+        if (s[i] >= 65 && s[i] <= 90) {
             p = s[i] - 65;
             ans += (char)((p + k) % 26) + 65;
         }
-        else {
+        else if(s[i] >= 97 && s[i] <= 122){
             p = s[i] - 97;
             ans += (char)((p + k) % 26) + 97;
+        }
+        else {
+            ans += s[i];
         }
     }
 
@@ -26,16 +26,16 @@ string Decryption(string s, int k) {
     int sz = s.length(), c = 0;
     string ans = "";
     for (int i = 0; i < sz; ++i) {
-        if (s[i] == ' '){
-            ans += s[i];
-        }
-        else if (s[i] >= 65 && s[i] <= 90) {
+        if (s[i] >= 65 && s[i] <= 90) {
             c = s[i] - 65;
             ans += (char)((c - k) % 26) + 65;
         }
-        else {
+        else if(s[i] >= 97 && s[i] <= 122) {
             c = s[i] - 97;
             ans += (char)((c - k) % 26) + 97;
+        }
+        else {
+            ans += s[i];
         }
     }
 

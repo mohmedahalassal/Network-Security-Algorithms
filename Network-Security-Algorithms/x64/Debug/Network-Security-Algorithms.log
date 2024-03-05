@@ -1,4 +1,4 @@
 ﻿  Network-Security-Algorithms.cpp
-C:\Users\mohme\Network-Security-Algorithms\Network-Security-Algorithms\Network-Security-Algorithms.cpp(6,12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\mohme\Network-Security-Algorithms\Network-Security-Algorithms\Network-Security-Algorithms.cpp(26,12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  Network-Security-Algorithms.vcxproj -> C:\Users\mohme\Network-Security-Algorithms\x64\Debug\Network-Security-Algorithms.exe
+C:\Users\mohme\NetworkSecAlgo\Network-Security-Algorithms\Network-Security-Algorithms.cpp(6,12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\mohme\NetworkSecAlgo\Network-Security-Algorithms\Network-Security-Algorithms.cpp(26,12): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Network-Security-Algorithms.vcxproj -> C:\Users\mohme\NetworkSecAlgo\x64\Debug\Network-Security-Algorithms.exe
