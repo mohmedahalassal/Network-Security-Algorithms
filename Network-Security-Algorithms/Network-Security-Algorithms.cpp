@@ -1,4 +1,5 @@
-#include<bits/stdc++.h> // mohmedahalassal 
+#include<iostream> // mohmedahalassal 
+#include<string>
 
 using namespace std;
 
@@ -6,11 +7,11 @@ string Encryption(string s, int k) {
     int sz = s.length(), p=0;
     string ans = "";
     for (int i = 0; i < sz; ++i) {
-        if (s[i] >= 65 && s[i] <= 90) {
+        if (isupper(s[i])) {
             p = s[i] - 65;
             ans += (char)((p + k) % 26) + 65;
         }
-        else if(s[i] >= 97 && s[i] <= 122){
+        else if(islower(s[i])){
             p = s[i] - 97;
             ans += (char)((p + k) % 26) + 97;
         }
@@ -26,11 +27,11 @@ string Decryption(string s, int k) {
     int sz = s.length(), c = 0;
     string ans = "";
     for (int i = 0; i < sz; ++i) {
-        if (s[i] >= 65 && s[i] <= 90) {
+        if (isupper(s[i])) {
             c = s[i] - 65;
             ans += (char)((c - k) % 26) + 65;
         }
-        else if(s[i] >= 97 && s[i] <= 122) {
+        else if (islower(s[i])) {
             c = s[i] - 97;
             ans += (char)((c - k) % 26) + 97;
         }
